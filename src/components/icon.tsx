@@ -12,7 +12,7 @@ export default function Icon(props: IconProps) {
 
 
     return (
-        <button className={"w-24"} onClick={() => {
+        <button className={"w-24 p-1 hover:border border-dashed border-slate-500"} onClick={() => {
             if (!setWindows)
                 return
             setWindows(prevState => {
