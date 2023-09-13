@@ -8,11 +8,11 @@ interface IconProps {
 }
 
 export default function Icon(props: IconProps) {
-    const {windows, setWindows} = useContext(WindowsContext)
+    const {setWindows} = useContext(WindowsContext)
 
 
     return (
-        <button className={"w-24"} onClick={(event) => {
+        <button className={"w-24"} onClick={() => {
             if (!setWindows)
                 return
             setWindows(prevState => {
